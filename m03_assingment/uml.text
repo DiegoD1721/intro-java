@@ -1,0 +1,53 @@
+-----------------------------------
+|          GeometricObject         |
+|---------------------------------|
+| - color: String                 |
+| - isFilled: boolean             |
+| - dateCreated: Date             |
+|---------------------------------|
+| + GeometricObject()             |
+| + GeometricObject(color: String,|
+|                   isFilled: bool)|
+| + getColor(): String            |
+| + setColor(color: String): void  |
+| + isFilled(): boolean           |
+| + setFilled(isFilled: boolean): |
+|      void                        |
+| + getDateCreated(): Date        |
+| + getArea(): double             |
+| + getPerimeter(): double        |
+| + toString(): String            |
+|---------------------------------|
+-----------------------------------
+          |                 ^
+          |                 |
+       
+          |                 |
+          |                 |
+-----------------------------------
+|              Circle               |
+|---------------------------------|
+| - radius: double                |
+|---------------------------------|
+| + Circle()                       |
+| + Circle(radius: double)         |
+| + Circle(radius: double,        |
+|   color: String, isFilled:     |
+|   boolean)                      |
+| + getRadius(): double           |
+| + setRadius(radius: double): void|
+| + getDiameter(): double         |
+| + compareTo(o: Circle): int      |
+| + equals(o: Object): boolean    |
+| + toString(): String            |
+|---------------------------------|
+-----------------------------------
+          |                 |
+          |                /|\
+          |                 |
+-----------------------------------
+|           Comparable             |
+|---------------------------------|
+| + compareTo(o: T): int          |
+|---------------------------------|
+-----------------------------------
